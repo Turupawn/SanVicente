@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="extras/nouislider.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+      nav ul li a{
+        background-color: #7b1fa2;
+      }
+      #nav_logo{
+        background-color: #7b1fa2;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Dropdown Structure -->
+    <ul id="bancos_dropdown" class="dropdown-content">
+      <li><a href="bancos_bancos.html" class="white-text">Bancos</a></li>
+      <li><a href="bancos_cuentas_de_banco.html" class="white-text">Cuentas de banco</a></li>
+    </ul>
+    <ul id="cursos_dropdown" class="dropdown-content">
+      <li><a href="cursos_cursos.html" class="white-text">Cursos</a></li>
+      <li><a href="cursos_horarios.html" class="white-text">Horarios</a></li>
+      <li><a href="cursos_periodos.html" class="white-text">Periodos</a></li>
+    </ul>
+    <nav>
+      <div id="nav_logo" class="nav-wrapper">
+        <a href="index.html" class="brand-logo">Cursos San Vicente de Paul</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sucursales.html">Sucursales</a></li>
+          <li><a href="libros.html">Libros</a></li>
+          <li><a href="matricula.html">Matricula</a></li>
+          <li><a href="alumnos.html">Alumnos</a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="cursos_dropdown">Cursos<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="bancos_dropdown">Bancos<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div>
+        <h5 class="valign center-align">Bienvenid@</h5>
+      </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>    
+  </body>
+</html>

@@ -43,27 +43,29 @@
       </div>
     </nav>
     <div class="container">
+      <h1>Realizar pago</h1>
+      <div class="col s12">
+        <p>Alumno: Gilberto</p>
+        <p>Fecha: 12/11/16</p>
+        <p>Total: L.900</p>
+      </div>
       <form class="col s12">
-        <h1>Matricular alumno</h1>
-        <div class="row">
-          <div class="input-field col s12">
-            <select>
-              <option value="" disabled selected>Curso</option>
-              <option value="1">Fundamental A</option>
-              <option value="2">Fundamental B</option>
-              <option value="2">Conversacion A</option>
-            </select>
-          </div>
-          <div class="input-field col s12">
-            <i class="material-icons prefix">perm_identity</i>
-            <input type="text" id="autocomplete-input" class="autocomplete">
-            <label for="autocomplete-input">Alumno</label>
-          </div>
-        </div>
+        <p>
+          <input name="group1" type="radio" id="test1" />
+          <label for="test1">Efectivo</label>
+        </p>
+        <p>
+          <input name="group1" type="radio" id="test2" />
+          <label for="test2">Tarjeta</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="test3"  />
+          <label for="test3">Banco</label>
+        </p>
       </form>
       <div class="col s12">
         <div class="right-align">
-          <a href="pago.html" class="btn-floating btn-large waves-effect waves-light lime"><i class="material-icons">done</i></a>
+          <a class="btn-floating btn-large waves-effect waves-light lime" onclick="Materialize.toast('Pago relizado exitosamente', 4000)"><i class="material-icons">print</i></a>
         </div>
       </div>
     </div>

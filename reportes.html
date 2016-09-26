@@ -44,26 +44,83 @@
     </nav>
     <div class="container">
       <form class="col s12">
-        <h1>Matricular alumno</h1>
+        <h1>Generador de reportes</h1>
         <div class="row">
           <div class="input-field col s12">
             <select>
-              <option value="" disabled selected>Curso</option>
-              <option value="1">Fundamental A</option>
-              <option value="2">Fundamental B</option>
-              <option value="2">Conversacion A</option>
+              <option value="" disabled selected>Venta realizada por...</option>
+              <option value="1">Maria</option>
+              <option value="1">Mario</option>
             </select>
           </div>
           <div class="input-field col s12">
-            <i class="material-icons prefix">perm_identity</i>
-            <input type="text" id="autocomplete-input" class="autocomplete">
-            <label for="autocomplete-input">Alumno</label>
+            <select>
+              <option value="" disabled selected>Cuenta de banco</option>
+              <option value="1">Banco del Occidente - 894325434</option>
+              <option value="1">Banpais - 2345435434</option>
+            </select>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Sucursal</option>
+              <option value="1">San Pedro Sula</option>
+              <option value="1">Tegucigalpa</option>
+            </select>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="" type="date" class="datepicker">
+            <label for="first_name">Fecha de inicio</label>
+          </div>
+          <div class="input-field col s12">
+            <input placeholder="" type="date" class="datepicker">
+            <label for="first_name">Fecha final</label>
           </div>
         </div>
       </form>
+        <div class="col s12">
+          <table class="responsive-table">
+            <tr>
+              <th>Realizada por...</th>
+              <th>Sucursal</th>
+              <th>Cuenta de banco</th>
+              <th>Alumno</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Mario</td>
+              <td>San Pedro Sula</td>
+              <td>Banco del Occidente - 98342354</td>
+              <td>Sebastian</td>
+              <td>L.1500</td>
+              <td>
+                <a href="#" class="btn-floating btn-large waves-effect waves-light lime"><i class="material-icons">mode_edit</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Mario</td>
+              <td>San Pedro Sula</td>
+              <td>Banco del Occidente - 98342354</td>
+              <td>Lucas</td>
+              <td>L.600</td>
+              <td>
+                <a href="#" class="btn-floating btn-large waves-effect waves-light lime"><i class="material-icons">mode_edit</i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Maria</td>
+              <td>Tegucigalpa</td>
+              <td>Efectivo</td>
+              <td>Ruperto</td>
+              <td>L.900</td>
+              <td>
+                <a href="#" class="btn-floating btn-large waves-effect waves-light lime"><i class="material-icons">mode_edit</i></a>
+              </td>
+            </tr>
+          </table>
+        </div>
       <div class="col s12">
         <div class="right-align">
-          <a href="pago.html" class="btn-floating btn-large waves-effect waves-light lime"><i class="material-icons">done</i></a>
+          <a class="btn-floating btn-large waves-effect waves-light lime" onclick="Materialize.toast('Banco editado exitosamente', 4000)"><i class="material-icons">done</i></a>
         </div>
       </div>
     </div>
@@ -81,7 +138,10 @@
             "Julian Casablancas": 'http://placehold.it/250x250'
           }
         });
-
+      });
+      $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
       });
     </script>
   </body>
